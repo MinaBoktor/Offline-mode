@@ -1,2 +1,0 @@
-[console_scripts]
-offlinemode = settings_app:main

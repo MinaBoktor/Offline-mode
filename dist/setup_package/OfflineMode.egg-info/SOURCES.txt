@@ -1,9 +1,0 @@
-README.txt
-offline.ico
-setup.py
-OfflineMode.egg-info/PKG-INFO
-OfflineMode.egg-info/SOURCES.txt
-OfflineMode.egg-info/dependency_links.txt
-OfflineMode.egg-info/entry_points.txt
-OfflineMode.egg-info/requires.txt
-OfflineMode.egg-info/top_level.txt
