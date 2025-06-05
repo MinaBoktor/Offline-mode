@@ -2,11 +2,11 @@
 
 
 a = Analysis(
-    ['C:\\Users\\RexoL\\source\\repos\\Offline\\service.py'],
+    ['C:\\Users\\RexoL\\source\\repos\\Offline-mode\\service.py'],
     pathex=[],
     binaries=[],
-    datas=[('C:\\Users\\RexoL\\source\\repos\\Offline\\offline.ico', '.')],
-    hiddenimports=['pystray._win32', 'pystray._darwin', 'pystray._x11', 'concurrent.futures', 'threading', 'queue', 'concurrent_log_handler', 'monolith', 'pywin32'],
+    datas=[('C:\\Users\\RexoL\\source\\repos\\Offline-mode\\offline.ico', '.')],
+    hiddenimports=['pystray._win32', 'pystray._darwin', 'pystray._x11', 'concurrent.futures', 'threading', 'queue', 'concurrent_log_handler', 'monolith', 'pywin32', 'win32serviceutil', 'win32service', 'win32event', 'servicemanager'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -29,11 +29,11 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['C:\\Users\\RexoL\\source\\repos\\Offline\\offline.ico'],
+    icon=['C:\\Users\\RexoL\\source\\repos\\Offline-mode\\offline.ico'],
 )

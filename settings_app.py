@@ -68,15 +68,40 @@ def main(command_queue=None):
         while not _app_shutdown.is_set():
             time.sleep(1)
 
+def is_valid_startup_path(path):
+    """Verify the startup path exists"""
+    # Extract the actual executable path from the command string
+    executable_path = path.strip('"').split('"')[0]
+    return os.path.exists(executable_path)
+
 def add_to_startup():
-    """Add the application to Windows startup"""
+    """Add the application to Windows startup with robust path handling"""
     try:
         key = winreg.HKEY_CURRENT_USER
         key_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
-
+        
+        # Get the absolute path to the executable
+        if getattr(sys, 'frozen', False):
+            # Running as compiled executable
+            app_path = sys.executable
+        else:
+            # Running as script - use pythonw.exe to run the script
+            app_path = sys.executable  # pythonw.exe
+            script_path = os.path.abspath(sys.argv[0])
+            startup_command = f'"{app_path}" "{script_path}" --silent'
+            
+        # For compiled version
+        if getattr(sys, 'frozen', False):
+            startup_command = f'"{app_path}" --silent'
+        
+        # Verify the path exists before creating the registry entry
+        if not os.path.exists(app_path if getattr(sys, 'frozen', False) else sys.executable):
+            raise FileNotFoundError("Executable path does not exist")
+            
         with winreg.OpenKey(key, key_path, 0, winreg.KEY_WRITE) as reg_key:
-            app_path = os.path.join(os.environ['PROGRAMFILES'], "OfflineMode", "OfflineMode.exe")
-            winreg.SetValueEx(reg_key, "OfflineMode", 0, winreg.REG_SZ, app_path)
+            winreg.SetValueEx(reg_key, "OfflineMode", 0, winreg.REG_SZ, startup_command)
+            
+        print(f"Added to startup: {startup_command}")
         return True
     except Exception as e:
         print(f"Failed to add to startup: {e}")
