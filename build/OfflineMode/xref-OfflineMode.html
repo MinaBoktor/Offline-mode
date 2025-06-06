@@ -157,6 +157,7 @@ imports:
  &#8226;   <a href="#concurrent.futures">concurrent.futures</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#customtkinter">customtkinter</a>
+ &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
  &#8226;   <a href="#encodings.ascii">encodings.ascii</a>
@@ -288,6 +289,7 @@ imports:
  &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#offline">offline</a>
  &#8226;   <a href="#operator">operator</a>
@@ -304,6 +306,7 @@ imports:
  &#8226;   <a href="#pystray">pystray</a>
  &#8226;   <a href="#pystray._darwin">pystray._darwin</a>
  &#8226;   <a href="#pystray._win32">pystray._win32</a>
+ &#8226;   <a href="#pywintypes">pywintypes</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#re._casefix">re._casefix</a>
@@ -327,9 +330,12 @@ imports:
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#win32api">win32api</a>
+ &#8226;   <a href="#win32con">win32con</a>
  &#8226;   <a href="#win32event">win32event</a>
  &#8226;   <a href="#win32service">win32service</a>
  &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#winreg">winreg</a>
 
   </div>
@@ -3451,6 +3457,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#urllib3.util.util">urllib3.util.util</a>
  &#8226;   <a href="#urllib3.util.wait">urllib3.util.wait</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.extractor.archiveorg">yt_dlp.extractor.archiveorg</a>
  &#8226;   <a href="#yt_dlp.extractor.telewebion">yt_dlp.extractor.telewebion</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._builtin.memory_cache">yt_dlp.extractor.youtube.pot._builtin.memory_cache</a>
@@ -4142,6 +4149,7 @@ imported by:
 imported by:
     <a href="#hmac">hmac</a>
  &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -5140,6 +5148,7 @@ imported by:
  &#8226;   <a href="#setuptools._distutils.dist">setuptools._distutils.dist</a>
  &#8226;   <a href="#setuptools.compat.py311">setuptools.compat.py311</a>
  &#8226;   <a href="#setuptools.glob">setuptools.glob</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -6491,9 +6500,11 @@ imported by:
  &#8226;   <a href="#email.encoders">email.encoders</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#requests.auth">requests.auth</a>
  &#8226;   <a href="#secrets">secrets</a>
  &#8226;   <a href="#setuptools._vendor.wheel.util">setuptools._vendor.wheel.util</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3.util.request">urllib3.util.request</a>
@@ -8125,6 +8136,7 @@ imported by:
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#numpy.f2py.capi_maps">numpy.f2py.capi_maps</a>
  &#8226;   <a href="#numpy.f2py.cfuncs">numpy.f2py.cfuncs</a>
  &#8226;   <a href="#numpy.f2py.crackfortran">numpy.f2py.crackfortran</a>
@@ -8133,6 +8145,7 @@ imported by:
  &#8226;   <a href="#numpy.ma.core">numpy.ma.core</a>
  &#8226;   <a href="#requests.cookies">requests.cookies</a>
  &#8226;   <a href="#setuptools._vendor.backports.tarfile">setuptools._vendor.backports.tarfile</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
@@ -9738,12 +9751,15 @@ imported by:
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#requests.models">requests.models</a>
  &#8226;   <a href="#requests.sessions">requests.sessions</a>
+ &#8226;   <a href="#settings_app.py">settings_app.py</a>
  &#8226;   <a href="#setuptools._vendor.tomli._re">setuptools._vendor.tomli._re</a>
  &#8226;   <a href="#setuptools.warnings">setuptools.warnings</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#soupsieve.css_match">soupsieve.css_match</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#tomllib._re">tomllib._re</a>
  &#8226;   <a href="#urllib3.connection">urllib3.connection</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.cookies">yt_dlp.cookies</a>
@@ -10096,6 +10112,7 @@ imports:
 imported by:
     <a href="#email.charset">email.charset</a>
  &#8226;   <a href="#email.header">email.header</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -10237,6 +10254,7 @@ imported by:
     <a href="#email.message">email.message</a>
  &#8226;   <a href="#setuptools._vendor.wheel.cli.pack">setuptools._vendor.wheel.cli.pack</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -10333,6 +10351,7 @@ imported by:
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#importlib.metadata._adapters">importlib.metadata._adapters</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#packaging.metadata">packaging.metadata</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#setuptools._core_metadata">setuptools._core_metadata</a>
@@ -10341,6 +10360,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.wheel.metadata">setuptools._vendor.wheel.metadata</a>
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.formats">setuptools.config._validate_pyproject.formats</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#yt_dlp.networking.common">yt_dlp.networking.common</a>
 
   </div>
@@ -10448,6 +10468,8 @@ imported by:
  &#8226;   <a href="#email.message">email.message</a>
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3.fields">urllib3.fields</a>
  &#8226;   <a href="#yt_dlp.utils._utils">yt_dlp.utils._utils</a>
@@ -13330,6 +13352,7 @@ imported by:
  &#8226;   <a href="#urllib3.poolmanager">urllib3.poolmanager</a>
  &#8226;   <a href="#urllib3.util.wait">urllib3.util.wait</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.compat._deprecated">yt_dlp.compat._deprecated</a>
  &#8226;   <a href="#yt_dlp.compat.compat_utils">yt_dlp.compat.compat_utils</a>
@@ -13743,6 +13766,7 @@ imports:
 imported by:
     <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#secrets">secrets</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib3.util.ssl_">urllib3.util.ssl_</a>
  &#8226;   <a href="#yt_dlp.extractor.abc">yt_dlp.extractor.abc</a>
  &#8226;   <a href="#yt_dlp.extractor.abematv">yt_dlp.extractor.abematv</a>
@@ -13873,6 +13897,7 @@ imports:
 imported by:
     <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3.connection">urllib3.connection</a>
  &#8226;   <a href="#urllib3.contrib.emscripten.connection">urllib3.contrib.emscripten.connection</a>
@@ -14842,6 +14867,7 @@ imported by:
  &#8226;   <a href="#importlib.resources._adapters">importlib.resources._adapters</a>
  &#8226;   <a href="#importlib.resources.abc">importlib.resources.abc</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
@@ -14875,6 +14901,7 @@ imported by:
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#six">six</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -15025,6 +15052,7 @@ imported by:
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp">yt_dlp</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.compat._legacy">yt_dlp.compat._legacy</a>
@@ -15621,6 +15649,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#offline">offline</a>
  &#8226;   <a href="#packaging.tags">packaging.tags</a>
@@ -15649,9 +15678,45 @@ imported by:
  &#8226;   <a href="#urllib3.response">urllib3.response</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#web">web</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#youtube">youtube</a>
  &#8226;   <a href="#yt_dlp.networking._requests">yt_dlp.networking._requests</a>
  &#8226;   <a href="#yt_dlp.networking._websockets">yt_dlp.networking._websockets</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="logging.handlers"></a>
+  <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/logging/handlers.py" type="text/plain"><tt>logging.handlers</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#ssl">ssl</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#win32evtlog">win32evtlog</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#settings_app.py">settings_app.py</a>
 
   </div>
 
@@ -23557,6 +23622,7 @@ imported by:
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.extractor.pornhub">yt_dlp.extractor.pornhub</a>
  &#8226;   <a href="#yt_dlp.jsinterp">yt_dlp.jsinterp</a>
@@ -23697,6 +23763,7 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -24567,6 +24634,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#numpy._core._methods">numpy._core._methods</a>
  &#8226;   <a href="#numpy.lib._npyio_impl">numpy.lib._npyio_impl</a>
@@ -26163,7 +26231,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#win32serviceutil">win32serviceutil</a>
+    <a href="#settings_app.py">settings_app.py</a>
+ &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
 
   </div>
 
@@ -26186,6 +26255,7 @@ imports:
 imported by:
     <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
@@ -26393,6 +26463,7 @@ imported by:
  &#8226;   <a href="#json.scanner">json.scanner</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#numpy._core._internal">numpy._core._internal</a>
  &#8226;   <a href="#numpy._typing._add_docstring">numpy._typing._add_docstring</a>
  &#8226;   <a href="#numpy.f2py._backends._meson">numpy.f2py._backends._meson</a>
@@ -26486,6 +26557,7 @@ imported by:
  &#8226;   <a href="#setuptools.glob">setuptools.glob</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#soupsieve.__meta__">soupsieve.__meta__</a>
  &#8226;   <a href="#soupsieve.css_match">soupsieve.css_match</a>
  &#8226;   <a href="#soupsieve.css_parser">soupsieve.css_parser</a>
@@ -26514,6 +26586,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#web">web</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#yt_dlp">yt_dlp</a>
@@ -32229,6 +32302,34 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="smtplib"></a>
+  <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/smtplib.py" type="text/plain"><tt>smtplib</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#email.base64mime">email.base64mime</a>
+ &#8226;   <a href="#email.generator">email.generator</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#hmac">hmac</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#ssl">ssl</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#logging.handlers">logging.handlers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="socket"></a>
   <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/socket.py" type="text/plain"><tt>socket</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -32258,6 +32359,7 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
@@ -32265,6 +32367,7 @@ imported by:
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#requests.adapters">requests.adapters</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -32649,10 +32752,12 @@ imported by:
  &#8226;   <a href="#asyncio.sslproto">asyncio.sslproto</a>
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.adapters">requests.adapters</a>
  &#8226;   <a href="#requests.help">requests.help</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.formats">setuptools.config._validate_pyproject.formats</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib3">urllib3</a>
  &#8226;   <a href="#urllib3._base_connection">urllib3._base_connection</a>
@@ -32827,6 +32932,7 @@ imported by:
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
@@ -32846,6 +32952,7 @@ imported by:
  &#8226;   <a href="#setuptools.command.bdist_wheel">setuptools.command.bdist_wheel</a>
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tarfile">tarfile</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.compat._legacy">yt_dlp.compat._legacy</a>
  &#8226;   <a href="#yt_dlp.cookies">yt_dlp.cookies</a>
  &#8226;   <a href="#yt_dlp.downloader.f4m">yt_dlp.downloader.f4m</a>
@@ -33216,6 +33323,7 @@ imported by:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#site">site</a>
  &#8226;   <a href="#six">six</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#sqlite3.__main__">sqlite3.__main__</a>
@@ -33507,6 +33615,7 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
@@ -33594,6 +33703,7 @@ imported by:
  &#8226;   <a href="#http.cookies">http.cookies</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
@@ -34578,6 +34688,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.timeout">urllib3.util.timeout</a>
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#urllib3.util.util">urllib3.util.util</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._builtin.memory_cache">yt_dlp.extractor.youtube.pot._builtin.memory_cache</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._director">yt_dlp.extractor.youtube.pot._director</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot.cache">yt_dlp.extractor.youtube.pot.cache</a>
@@ -34662,6 +34773,7 @@ imported by:
  &#8226;   <a href="#urllib3.poolmanager">urllib3.poolmanager</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#urllib3.util.ssltransport">urllib3.util.ssltransport</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -35054,6 +35166,7 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
@@ -36886,8 +36999,10 @@ imported by:
   <tt>win32api</tt> <span class="moduletype"><tt>C:\Users\RexoL\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\win32api.pyd</tt></span>  <div class="import">
 imported by:
     <a href="#appdirs">appdirs</a>
+ &#8226;   <a href="#settings_app.py">settings_app.py</a>
  &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
  &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -36898,7 +37013,8 @@ imported by:
   <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32/lib/win32con.py" type="text/plain"><tt>win32con</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
-    <a href="#win32evtlogutil">win32evtlogutil</a>
+    <a href="#settings_app.py">settings_app.py</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
  &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
 
   </div>
@@ -36919,7 +37035,8 @@ imported by:
   <a name="win32evtlog"></a>
   <tt>win32evtlog</tt> <span class="moduletype"><tt>C:\Users\RexoL\AppData\Local\Programs\Python\Python313\Lib\site-packages\win32\win32evtlog.pyd</tt></span>  <div class="import">
 imported by:
-    <a href="#win32evtlogutil">win32evtlogutil</a>
+    <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
 
   </div>
 
@@ -36938,7 +37055,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#win32serviceutil">win32serviceutil</a>
+    <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
 
   </div>
 
@@ -36995,6 +37113,35 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="win32timezone"></a>
+  <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32/lib/win32timezone.py" type="text/plain"><tt>win32timezone</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#_operator">_operator</a>
+ &#8226;   <a href="#_typeshed">_typeshed</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#win32api">win32api</a>
+ &#8226;   <a href="#winreg">winreg</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#settings_app.py">settings_app.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="winerror"></a>
   <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32/lib/winerror.py" type="text/plain"><tt>winerror</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -37026,6 +37173,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.platformdirs.windows">setuptools._vendor.platformdirs.windows</a>
  &#8226;   <a href="#setuptools.msvc">setuptools.msvc</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 

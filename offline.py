@@ -59,10 +59,11 @@ def _signal_handler(signum, frame):
     sys.exit(0)
 
 # Register signal handlers for graceful shutdown
-if hasattr(signal, 'SIGTERM'):
-    signal.signal(signal.SIGTERM, _signal_handler)
-if hasattr(signal, 'SIGINT'):
-    signal.signal(signal.SIGINT, _signal_handler)
+if not getattr(sys, '_MEIPASS', False) and threading.current_thread() is threading.main_thread():
+    if hasattr(signal, 'SIGTERM'):
+        signal.signal(signal.SIGTERM, _signal_handler)
+    if hasattr(signal, 'SIGINT'):
+        signal.signal(signal.SIGINT, _signal_handler)
 
 def sync(token: str, path: str, resolution: str, delimiter: str, VIDEO: bool, stop_event: Optional[threading.Event] = None) -> bool:
     """

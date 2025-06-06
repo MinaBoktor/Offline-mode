@@ -96,7 +96,6 @@ imports:
  &#8226;   <a href="#appdirs">appdirs</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#concurrent.futures">concurrent.futures</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#encodings">encodings</a>
@@ -224,6 +223,7 @@ imports:
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#genericpath">genericpath</a>
+ &#8226;   <a href="#getpass">getpass</a>
  &#8226;   <a href="#heapq">heapq</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#json">json</a>
@@ -241,9 +241,8 @@ imports:
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#pyi_rth_pywintypes.py">pyi_rth_pywintypes.py</a>
- &#8226;   <a href="#pystray._darwin">pystray._darwin</a>
  &#8226;   <a href="#pystray._win32">pystray._win32</a>
- &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#pywintypes">pywintypes</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#re._casefix">re._casefix</a>
  &#8226;   <a href="#re._compiler">re._compiler</a>
@@ -266,6 +265,7 @@ imports:
  &#8226;   <a href="#win32event">win32event</a>
  &#8226;   <a href="#win32service">win32service</a>
  &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -799,6 +799,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#urllib3.util.util">urllib3.util.util</a>
  &#8226;   <a href="#urllib3.util.wait">urllib3.util.wait</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.extractor.archiveorg">yt_dlp.extractor.archiveorg</a>
  &#8226;   <a href="#yt_dlp.extractor.telewebion">yt_dlp.extractor.telewebion</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._builtin.memory_cache">yt_dlp.extractor.youtube.pot._builtin.memory_cache</a>
@@ -1379,6 +1380,7 @@ imported by:
 imported by:
     <a href="#hmac">hmac</a>
  &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -1749,6 +1751,17 @@ imported by:
   <tt>_tracemalloc</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#tracemalloc">tracemalloc</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="_typeshed"></a>
+  <a target="code" href="" type="text/plain"><tt>_typeshed</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -4273,7 +4286,6 @@ imported by:
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#offline">offline</a>
- &#8226;   <a href="#service.py">service.py</a>
  &#8226;   <a href="#yt_dlp.downloader.fragment">yt_dlp.downloader.fragment</a>
 
   </div>
@@ -4794,6 +4806,7 @@ imported by:
  &#8226;   <a href="#soupsieve.css_match">soupsieve.css_match</a>
  &#8226;   <a href="#sqlite3.dbapi2">sqlite3.dbapi2</a>
  &#8226;   <a href="#urllib3.connection">urllib3.connection</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.cookies">yt_dlp.cookies</a>
@@ -8120,6 +8133,7 @@ imported by:
  &#8226;   <a href="#urllib3.poolmanager">urllib3.poolmanager</a>
  &#8226;   <a href="#urllib3.util.wait">urllib3.util.wait</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.compat._deprecated">yt_dlp.compat._deprecated</a>
  &#8226;   <a href="#yt_dlp.compat.compat_utils">yt_dlp.compat.compat_utils</a>
@@ -8276,7 +8290,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#urllib.request">urllib.request</a>
+    <a href="#service.py">service.py</a>
+ &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#yt_dlp">yt_dlp</a>
  &#8226;   <a href="#yt_dlp.compat._legacy">yt_dlp.compat._legacy</a>
  &#8226;   <a href="#yt_dlp.extractor.adobepass">yt_dlp.extractor.adobepass</a>
@@ -9635,6 +9650,7 @@ imported by:
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp">yt_dlp</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.compat._legacy">yt_dlp.compat._legacy</a>
@@ -10132,6 +10148,7 @@ imported by:
  &#8226;   <a href="#urllib3.response">urllib3.response</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#web">web</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#youtube">youtube</a>
  &#8226;   <a href="#yt_dlp.networking._requests">yt_dlp.networking._requests</a>
  &#8226;   <a href="#yt_dlp.networking._websockets">yt_dlp.networking._websockets</a>
@@ -11304,6 +11321,7 @@ imported by:
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.YoutubeDL">yt_dlp.YoutubeDL</a>
  &#8226;   <a href="#yt_dlp.extractor.pornhub">yt_dlp.extractor.pornhub</a>
  &#8226;   <a href="#yt_dlp.jsinterp">yt_dlp.jsinterp</a>
@@ -11989,7 +12007,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#pystray">pystray</a>
- &#8226;   <a href="#service.py">service.py</a>
 
   </div>
 
@@ -12226,7 +12243,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#win32serviceutil">win32serviceutil</a>
+    <a href="#service.py">service.py</a>
+ &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
 
   </div>
 
@@ -12255,7 +12273,6 @@ imported by:
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#service.py">service.py</a>
  &#8226;   <a href="#six.moves.queue">six.moves.queue</a>
  &#8226;   <a href="#urllib3.connectionpool">urllib3.connectionpool</a>
 
@@ -12474,6 +12491,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#web">web</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
  &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#yt_dlp">yt_dlp</a>
@@ -14379,6 +14397,7 @@ imported by:
  &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tarfile">tarfile</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.compat._legacy">yt_dlp.compat._legacy</a>
  &#8226;   <a href="#yt_dlp.cookies">yt_dlp.cookies</a>
  &#8226;   <a href="#yt_dlp.downloader.f4m">yt_dlp.downloader.f4m</a>
@@ -15240,6 +15259,7 @@ imported by:
  &#8226;   <a href="#urllib3.util.timeout">urllib3.util.timeout</a>
  &#8226;   <a href="#urllib3.util.url">urllib3.util.url</a>
  &#8226;   <a href="#urllib3.util.util">urllib3.util.util</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._builtin.memory_cache">yt_dlp.extractor.youtube.pot._builtin.memory_cache</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot._director">yt_dlp.extractor.youtube.pot._director</a>
  &#8226;   <a href="#yt_dlp.extractor.youtube.pot.cache">yt_dlp.extractor.youtube.pot.cache</a>
@@ -15295,6 +15315,7 @@ imported by:
  &#8226;   <a href="#urllib3.poolmanager">urllib3.poolmanager</a>
  &#8226;   <a href="#urllib3.util.retry">urllib3.util.retry</a>
  &#8226;   <a href="#urllib3.util.ssltransport">urllib3.util.ssltransport</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -17073,6 +17094,7 @@ imported by:
     <a href="#appdirs">appdirs</a>
  &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
  &#8226;   <a href="#win32serviceutil">win32serviceutil</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
@@ -17172,6 +17194,35 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="win32timezone"></a>
+  <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32/lib/win32timezone.py" type="text/plain"><tt>win32timezone</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#_operator">_operator</a>
+ &#8226;   <a href="#_typeshed">_typeshed</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#typing_extensions">typing_extensions</a>
+ &#8226;   <a href="#win32api">win32api</a>
+ &#8226;   <a href="#winreg">winreg</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#service.py">service.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="winerror"></a>
   <a target="code" href="///C:/Users/RexoL/AppData/Local/Programs/Python/Python313/Lib/site-packages/win32/lib/winerror.py" type="text/plain"><tt>winerror</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -17198,6 +17249,7 @@ imported by:
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#win32timezone">win32timezone</a>
 
   </div>
 
